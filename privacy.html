@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DocPocket Privacy Policy</title>
+<meta name="description" content="How DocPocket for iPhone and iPad handles your documents and data: everything is processed and stored on your device, no account, no analytics, no data collected.">
+<style>
+  :root { color-scheme: light dark; --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#e5e5ea; --accent:#0a66c2; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#000000; --fg:#f5f5f7; --muted:#a1a1a6; --line:#2c2c2e; --accent:#5aa9ff; } }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin:0; background:var(--bg); color:var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 32px; line-height:1.15; letter-spacing:-0.02em; margin: 0 0 8px; }
+  h2 { font-size: 22px; letter-spacing:-0.01em; margin: 36px 0 10px; }
+  h3 { font-size: 18px; margin: 24px 0 6px; }
+  p, li { max-width: 68ch; }
+  .meta { color: var(--muted); font-size: 15px; margin-bottom: 28px; }
+  .box { border:1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin: 20px 0; }
+  table { border-collapse: collapse; width:100%; font-size: 15px; }
+  th, td { text-align:left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { font: 14px/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; background: rgba(127,127,127,.12); padding: 1px 5px; border-radius: 5px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; border-top:1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>DocPocket Privacy Policy</h1>
+  <p class="meta">Effective 16 November 2026 · Version 1.0 · Applies to the DocPocket app for iPhone and iPad and its Share Extension and widgets</p>
+
+  <div class="box">
+    <p><strong>The short version.</strong> DocPocket reads your documents on your iPhone or iPad and keeps them there. There is no DocPocket account, no DocPocket server and no cloud copy. We never see your documents, the text in them, your searches or the facts the app extracts. DocPocket collects no data at all: no analytics, no tracking, no crash reporting of our own. Its language model is built into the app, so it does not even download one.</p>
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>DocPocket is published by Maksim Krupchatnikov, an individual entrepreneur registered in Georgia (the country), address Chugureti district, Lochini street, N3, floor 2, apartment N5, 0101 Tbilisi, Georgia ("we", "us"). Contact: <a href="mailto:maximkrupss@gmail.com">maximkrupss@gmail.com</a>. The app sends us no personal data, so there is nothing we hold about you as a user of the app; if you write to us, we hold your email only to answer it.</p>
+
+  <h2>2. What the app does with your documents</h2>
+  <p>When you add a document (by sharing it from another app, picking a file or photo, letting DocPocket find documents among your photos, or scanning with the camera), DocPocket does the following, entirely on your device:</p>
+  <ul>
+    <li>Copies the file into the app's protected storage (see section 3).</li>
+    <li>Reads the text. For PDFs with a text layer it uses the text; for scans and photos it uses Apple's on-device text recognition (Vision). No image or text is sent anywhere for recognition.</li>
+    <li>Extracts facts with rules that run on the device: document type, dates, amounts, names of people and organizations, identifiers such as policy or contract numbers, and expiry or due dates.</li>
+    <li>On devices that support Apple Intelligence, it may additionally use Apple's on-device Foundation Models to structure these facts. This runs on your device under Apple's own terms; nothing is sent to Apple by DocPocket.</li>
+    <li>On other supported devices, it uses the Smart Pack (section 6), a language model built into the app, for the same purpose. The model runs on your device only.</li>
+    <li>Builds a search index (words and numeric representations of meaning) so you can search and ask questions. The index is stored next to your documents and never leaves the device.</li>
+    <li>Schedules local notifications for dates you ask to be reminded about. These are iOS local notifications; no push server is involved.</li>
+  </ul>
+  <p>Answers to questions are composed only from facts found in your own documents on your device. DocPocket does not send questions, documents or answers to any online service.</p>
+
+  <h2>3. Where your data is stored, and for how long</h2>
+  <ul>
+    <li>Documents, extracted facts, the search index and your settings are stored in the app's App Group container on your device (<code>group.ge.krupchatnikov.docpocket</code>). The App Group is what lets the Share Extension and the widget see the same data; it is still local storage on your device.</li>
+    <li>Files are protected with iOS Data Protection (class "Complete"), which means they are encrypted with your device passcode and unreadable while the device is locked.</li>
+    <li>If you turn on App Lock, DocPocket asks iOS to verify you with Face ID or Touch ID before showing content. Biometric data is handled by iOS only; the app never receives your face or fingerprint data and cannot access it.</li>
+    <li>Data stays on your device until you delete it. Deleting a document in the app removes the file, its extracted facts and index entries. Deleting the app removes all DocPocket data from the device. Your documents are included in your device backup (iCloud or computer) according to your iOS or iPadOS backup settings, which are under your control, not ours.</li>
+    <li>Spotlight: DocPocket may register document titles, types and dates with iOS Spotlight so you can find them from the Home Screen search. Document contents are not indexed by Spotlight. This index is on your device and is removed when you delete the document or the app.</li>
+  </ul>
+
+  <h2>4. No analytics, no tracking</h2>
+  <p>DocPocket contains no analytics or advertising SDK and does not track you across apps or websites. It sends no usage statistics, no device identifiers and no crash reports to us or to anyone else. If you have shared crash data with app developers in your device's settings, Apple may pass us anonymous crash reports under Apple's own terms; they contain no document content.</p>
+
+  <h2>5. Share Extension</h2>
+  <p>The DocPocket item in the iOS Share sheet does one thing: it copies the file you chose into the app's local inbox folder in the App Group container and shows a confirmation. It has no network access and performs no text recognition or extraction itself. Processing happens the next time you open the main app.</p>
+
+  <h2>6. Smart Pack (the built-in language model)</h2>
+  <p>On devices without Apple Intelligence, DocPocket uses the Smart Pack: a small open-source language model (based on Qwen3, Apache 2.0 license) that ships inside the app. Nothing is downloaded to use it, and it runs on your device only. It reads your documents the same way the rules do, to give them titles, summaries and answers, and it sends nothing anywhere.</p>
+
+  <h2>7. Purchases</h2>
+  <p>DocPocket Pro is sold through Apple's App Store using in-app purchase. Apple processes the payment and holds your billing details; we never receive your card or Apple Account details. The app checks your entitlement locally with StoreKit. We receive aggregated, anonymous sales reports from Apple. For how Apple handles your data, see <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+
+  <h2>8. Permissions the app may ask for</h2>
+  <table>
+    <tr><th>Permission</th><th>When</th><th>Why</th></tr>
+    <tr><td>Camera</td><td>Only when you tap Scan</td><td>To scan paper documents. Scans are saved on the device only.</td></tr>
+    <tr><td>Photos</td><td>Only when you tap Find in Photos</td><td>DocPocket looks through the photos you allow (all, or only the ones you select in the iOS prompt) for receipts, cards and letters, and reads them on your device. Nothing is uploaded. Picking individual photos with the system photo picker needs no permission at all.</td></tr>
+    <tr><td>Face ID / Touch ID</td><td>If you turn on App Lock</td><td>iOS confirms it is you before showing content. The app receives only a yes/no.</td></tr>
+    <tr><td>Photos (add only)</td><td>Only when you choose Save Image in the share sheet</td><td>To add that one image (for example a share card) to your photo library. DocPocket cannot see your other photos with this permission.</td></tr>
+    <tr><td>Notifications</td><td>On the optional reminders screen during setup, or the first time you tap "Remind me"</td><td>To show local reminders for expiry and due dates. No push server.</td></tr>
+  </table>
+  <p>Declining any permission only disables that one feature.</p>
+
+  <h2>9. Your rights and choices</h2>
+  <ul>
+    <li><strong>Access, correction, deletion:</strong> all of your data is on your device, under your control. View it in the app, change it, delete documents, or delete the app to remove everything.</li>
+    <li><strong>EU/EEA and UK residents:</strong> the app does not send us personal data. If you email us, we process your message to answer it (our legitimate interest, Art. 6(1)(f) GDPR) and delete it when it is no longer needed. You have the right to lodge a complaint with your local supervisory authority.</li>
+    <li><strong>California residents:</strong> we do not sell or share personal information as defined by the CCPA/CPRA, and we do not collect personal information through the app.</li>
+  </ul>
+
+  <h2>10. Children</h2>
+  <p>DocPocket is not directed at children under 13 (or the age of digital consent in your country) and we do not knowingly collect any data from them. The app has no account and collects no personal data, so there is nothing for a parent to request; if you believe a child has used the app and you have a concern, write to us.</p>
+
+  <h2>11. International transfers</h2>
+  <p>The app transfers no data anywhere, so there are no international transfers from the app. Purchases are handled by Apple under its own terms.</p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>If we change what the app collects, we will update this page, change the version and effective date at the top, and, for anything that increases data collection, show a notice in the app before it takes effect. Earlier versions are available on request.</p>
+
+  <h2>13. Contact</h2>
+  <p>Email <a href="mailto:maximkrupss@gmail.com">maximkrupss@gmail.com</a>. We answer within five business days.</p>
+
+  <footer>
+    <p>DocPocket · Maksim Krupchatnikov, individual entrepreneur, Georgia · <a href="terms.html">Terms of Use</a> · <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</main>
+</body>
+</html>
